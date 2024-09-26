@@ -26,13 +26,13 @@ public class FreshMerchandise extends Merchandise {
 
     // Método que devuelve los datos específicos como un String
     public String getSpecificData() {
-        // Construir el String con la información específica
-        StringBuilder sb = new StringBuilder();
-        sb.append("Localización: ").append(getLocation()).append("\n");
-        sb.append("Fecha de caducidad: ").append(getFormattedDate(expirationDate));
+        // Construir el String con la información específica usando concatenación
+        String sb = "Localización: " + getLocation() + "\n" +
+                "Fecha de caducidad: " + getFormattedDate(expirationDate);
 
-        return sb.toString();
+        return sb;
     }
+
 
     // Método para imprimir los datos específicos
     public void printSpecificData() {
